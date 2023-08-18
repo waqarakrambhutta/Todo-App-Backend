@@ -8,6 +8,7 @@ application = get_wsgi_application()
 
 from tasks.models import Tasks
 
+
 def load_tasks_data(csv_file_path):
     with open(csv_file_path, 'r') as csvfile:
         csv_reader = csv.reader(csvfile)
